@@ -1,7 +1,7 @@
 const DarkModeButton = (props) => {
     return (
-        <button className='dark-mode-button' onClick={function() { props.toggleDarkMode(); }}>
-            Toggle Dark Mode
+        <button className='dark-mode-button' onClick={function() { props.changeMode(); }}>
+            { props.text }
         </button>
     );
 }
