@@ -6,17 +6,13 @@ app= Flask(__name__)
 CORS(app)
 
 @app.route("/data/", methods=["GET"])
-def setName():
-    data = {
+def ingredients_list():
+    with open("../database.txt") as database:
+        data = {
         "name": "Oliver",
-        "items": [
-            "Onions",
-            "Garlic",
-            "Celery",
-            "Balsamic Vinegar"
-        ]
+        "items": [item.strip() for item in database.readlines()]
     }
-    #abort(404)
+
     return jsonify(data)
 
 if __name__=='__main__':
