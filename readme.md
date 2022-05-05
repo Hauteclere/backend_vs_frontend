@@ -1,7 +1,5 @@
 # Backend Vs Frontend: What's The Difference?
 
-> Note to self: turn off notifications **now**! 🙃
-
 Hi, I'm Oliver! I do web dev and dev ops and I also go hiking and occasionally climb/fall off cliffs in my spare time:
 
 ![Me hiking in my natural habitat](./images/me.jpg)
@@ -85,8 +83,6 @@ The solution to that problem came along in ~1995, with the birth of ✨**Javascr
 Javascript is a true programming language. This sets it apart from HTML and CSS, which are *presentation* languages only. With Javascript, you aren't just limited to describing how things should look - you should define how they are allowed to change, and under what circumstances.
 
 The particularly exciting thing about Javascript is that it is designed to run *in the users's browser*! This is huge, because it means that instead of sending somebody new HTML site every time something needs to change on the screen, we can send them a single HTML file, plus some Javascript. The Javascript will modify the HTML file for us on the fly, changing the user's experience in ways that we programmed into it. Let's look at an example:
-
-> note to self: remember to run `npm install` before running `npm start`, because you're switching branches!
 
 ![A simple react.js website in light mode](./images/light_mode.png)
 
