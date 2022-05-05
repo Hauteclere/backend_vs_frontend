@@ -112,3 +112,5 @@ What we really need is to have a computer somewhere whose job is just to keep tr
 Then, when a user accesses the website, the super-powerful javascript that I send them will awaken in their browser, and access that database to find out what items are on my shopping list right now. If I decide to add an item to my list, I'll just add it in the database, and anyone who accesses the website after that will see it appear. 
 
 I can even write my javascript so that it will ask users for new items to add to the list, and then send them to the database as new additions. Then everyone will see the updated list!
+
+And that is where the backend and the frontend come into play! Let's take a look:
