@@ -86,3 +86,12 @@ Javascript is a true programming language. This sets it apart from HTML and CSS,
 
 The particularly exciting thing about Javascript is that it is designed to run *in the users's browser*! This is huge, because it means that instead of sending somebody new HTML site every time something needs to change on the screen, we can send them a single HTML file, plus some Javascript. The Javascript will modify the HTML file for us on the fly, changing the user's experience in ways that we programmed into it. Let's look at an example:
 
+> note to self: remember to run `npm install` before running `npm start`, because you're switching branches!
+
+![A simple react.js website in light mode](./images/light_mode.png)
+
+![The same website in dark mode](./images/dark_mode.png)
+
+You can take a look at the code that makes this website run [here]().
+
+<iframe src="https://giphy.com/embed/8bYqZB9rtl4mluDPkL" width="480" height="204" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/orchfilms-movie-orchard-films-antiquities-8bYqZB9rtl4mluDPkL">via GIPHY</a></p>
