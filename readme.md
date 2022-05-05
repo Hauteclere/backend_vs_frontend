@@ -40,6 +40,11 @@ The basic file-type that our web browsers display to is is `.html`. These files 
 
 > NB: In fact, when we web developers are writing an HTML file, we often separate out all the information related to appearance/style, and put that into another file - a `.css` file. But the browser takes these two files and mashes them together when it draws the website, so that distinction isn't too important here.
 
+
+<br>
+
+## Part 1: The Bad Old Days
+
 Here's an example of a **very** simple website that I coded as an HTML/CSS file combo: 
 <br><br>
 
@@ -47,17 +52,14 @@ Here's an example of a **very** simple website that I coded as an HTML/CSS file 
 
 You can see the code I wrote for it [here](https://github.com/Hauteclere/backend_vs_frontend/tree/html_only).
 
-Great! So that's how websites work. Case closed. End of topic. Nothing more to say. I guess we can all go home now. ...Right?
-<br>
-<br>
-## Part 1: The Bad Old Days
+Great! So that's how websites work. Case closed. End of topic. Nothing more to say. I guess we can all go home now. ...Right? 
 
 What I just described is the minimum viable configuration for looking at a webpage on your browser. It used to be all we had, back during 90s and early 00s, and for the simple case where I have a website and you want to look at it, it works just fine.
 
 **However**. This has some problems.
 
 1. Every time we want to see a new webpage, we need to request it again. 
-1. If I ever want the website to change while you're looking at it, I need to set up some way to convince you to request a fresh copy of it. Maybe there's a button you can click that asks for a different version of the file...?
+1. If I ever want the page you're on to change while you're looking at it, I need to set up some way to convince you to request a fresh copy of it. Maybe there's a button you can click that asks for a different version of the file...?
 1. All of the work of creating and distributing the website has to take place on *my* computer! If a lot of people all ask me for different pages, that will be a lot of calculation for my poor little processor... 
 
 If we had to come up with a metaphor for this style of website architecture, we could say that it was like a pizza delivery restaurant. I can call up and order a Hawaiian pizza whenever I want, and the restaurant will prepare it and send someone to bring it to me. If I later decide I want to have a garlic bread as well, I need to phone up again, place a new order, and wait for it to arrive.
@@ -66,5 +68,21 @@ If we had to come up with a metaphor for this style of website architecture, we 
 
 > We blew out the production budget for the year on this single image.
 
-It's not the most efficient system, as you can imagine.
+It's not the most efficient system, as you can imagine. It tends to result in clunky, bland websites that tie your web server's resources up. But it gets the job done, and it's still used today in simple applications.
+<br><br>
+
+## Part 2: We Need More Power!
+<br>
+
+![Scotty from Startrek, giving 'er all she's got](./images/scotty-startrek.gif)
+
+Once the internet stopped being something that only defense personel and research academics used, and fell into the hands of the general public, it quickly became apparent that sending bland documents back and forth wasn't going to cut it, and we needed a system with a little bit more oomph. 
+
+In particular, it became clear that to make web pages fun and interactive, we needed a way to allow them to change from moment to moment in response to the way they were used, without having to go through all the rigmarole of sending a request back to the server every time.
+
+The solution to that problem came along in ~1995, with the birth of ✨**Javascript**✨.
+
+Javascript is a true programming language. This sets it apart from HTML and CSS, which are *presentation* languages only. With Javascript, you aren't just limited to describing how things should look - you should define how they are allowed to change, and under what circumstances.
+
+The particularly exciting thing about Javascript is that it is designed to run *in the users's browser*! This is huge, because it means that instead of sending somebody new HTML site every time something needs to change on the screen, we can send them a single HTML file, plus some Javascript. The Javascript will modify the HTML file for us on the fly, changing the user's experience in ways that we programmed into it. Let's look at an example:
 
