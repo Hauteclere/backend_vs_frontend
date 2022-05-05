@@ -9,7 +9,7 @@ Hi, I'm Oliver! I do web dev and dev ops and I also go hiking and occasionally c
 
 In this talk I'll going over an introductory explanation of what we mean when we talk about "the backend" or "the frontend" in the context of web development.
 
-In the process, I'll be running through a little history as well so we can see how we got to where we are today, and maybe a little bit about where we are going...
+In the process, I'll be running through a little history as well so we can see how we got to where we are today.
 
 ## This Repo
 
@@ -107,10 +107,56 @@ This is where the magic happens, baby!
 
 ## Frontend and Backend - The Website Shall Be Split In Twain!
 
-What we really need is to have a computer somewhere whose job is just to keep track of the information I have included in my website. It can store a list of all the items on my shopping list. We call this a **database**.
+What we really need is to have a computer somewhere whose job is just to keep track of the information I have included in my website. It can store a list of all the items on my shopping list. We call this a **database**. We'll also have a program that we run whose job it is to make the information stored in that datbase available - this is an **API**.
 
-Then, when a user accesses the website, the super-powerful javascript that I send them will awaken in their browser, and access that database to find out what items are on my shopping list right now. If I decide to add an item to my list, I'll just add it in the database, and anyone who accesses the website after that will see it appear. 
+Then, when a user accesses the website, the super-powerful Javascript that I send them will awaken in their browser, and access that API/database to find out what items are on my shopping list right now. If I decide to add an item to my list, I'll just add it in the database, and anyone who accesses the website after that will see it appear. 
 
 I can even write my javascript so that it will ask users for new items to add to the list, and then send them to the database as new additions. Then everyone will see the updated list!
 
-And that is where the backend and the frontend come into play! Let's take a look:
+What I'm talking about is a *division of labour*. 
+
+- The website will have one element that "stands at the front", which will be devoted to displaying information and interacting with the user. AKA, the **front end**.
+- The other element will "work behind the scenes", distributing and storing data. AKA, the **back end**.
+
+Let's see what that looks like. The code is all [here](https://github.com/Hauteclere/backend_vs_frontend/tree/get_only) if you're interested: 
+
+### First, the back end:
+
+For this demonstration, instead of a proper, production-tier database, I'm storing my data in a simple `.txt` file. That lets us see the contents very easily:
+
+![The .txt file containing our data](./images/data1.png)
+
+We run a program on our server that waits for people to request data, and sends it to them when they need it. In this case, the "person" who will be requesting data is the Javascript code we sent to our user! 
+
+Here we can see the API program logging the requests it has received:
+
+![The terminal interface with data requests logged](./images/back1.png)
+
+### Now let's look at the front end:
+
+Our website looks very similar to how it was before, except now it has a button to "refresh" the shopping list. Clicking this button triggers a request to the back end for more data.
+
+![The website, displaying the shopping items from our database](./images/front1.png)
+
+
+### Changes to the database are reflected in the website!
+
+Let's add an item to our database and see what happens:
+
+![The database with a new item added: "6 limes"](./images/data2.png)
+
+We've added some limes to our shopping database. I wonder what happens when we click that `refresh list` button on the front end...
+
+![The front end website, displaying our updated list](./images/front2.png)
+
+Check it out! Our front end and back end are working hand-in-hand to provide a useful website to our users!
+
+This is the backend/frontend structure that we hear about so often in modern programming. So where next?
+
+<br>
+
+## Full-Stack!
+
+As the tools we use have improved, more and more people have become proficient in working both on the back end **and** the front end. This has made room for developers who work with every part of the website, AKA, "Full Stack Developers".
+
+In our bootcamps, we teach you web development from the bottom up, which means you'll graduate equipped to work on the front end, the back end, or the full stack. Exciting stuff!
