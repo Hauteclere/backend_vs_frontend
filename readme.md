@@ -31,7 +31,7 @@ If you've spent time in the last thirty years using computers, you are no doubt 
 > An improvement, some would say...
 
 <br>
-The key thing to note here is that a website is just another file. The program we use to view it in is called a **web browser** (ex: Chrome, Firefox, Edge...). The only difference is that instead of being stored on our computer, websites are stored on *other people's* computers. To access them our computer sends out a request through the internet, and when the website owner's computer gets that request, it responds by sending us the file.
+The key thing to note here is that **a website is just another file**. The program we use to view it in is called a **web browser** (ex: Chrome, Firefox, Edge...). The only difference is that instead of being stored on our computer, websites are stored on *other people's* computers. To access them our computer sends out a request through the internet, and when the website owner's computer gets that request, it responds by sending us the file.
 
 ![A computer requesting a website and a webserver responding](./images/website.png)
 <br><br>
@@ -92,6 +92,23 @@ The particularly exciting thing about Javascript is that it is designed to run *
 
 ![The same website in dark mode](./images/dark_mode.png)
 
-You can take a look at the code that makes this website run [here]().
+You can take a look at the code that makes this website run [here](https://github.com/Hauteclere/backend_vs_frontend/tree/front_only). It's a significantly more complex that what we had before! That's mainly because it's written using a Javascript tool called `React`. If we really wanted to, we could make it simpler. If you take a look at [this file in particular](https://github.com/Hauteclere/backend_vs_frontend/blob/front_only/examplefrontend/src/components/shoppinglist.js), you might see some similarities.
 
-<iframe src="https://giphy.com/embed/8bYqZB9rtl4mluDPkL" width="480" height="204" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/orchfilms-movie-orchard-films-antiquities-8bYqZB9rtl4mluDPkL">via GIPHY</a></p>
+This is great! Ok, time to pack it all up, people: we fixed the internet!
+
+... Not so fast! We still have one problem left: **I had to include all the information for what should appear on this website when I coded it!**. 
+
+I sat down and said to myself *"I want a website that can have a dark mode or a light mode. In dark mode I want the background to be slate-green, and in light mode I want it to be white."* And then I put all of that information into my Javascript file.
+
+What if later on I want to add a new item to my shopping list? Or, even more useful: what if I want *the users* of the website to be able to add new items to my shopping list for me? This type of website is powerful, but if I want to make a change like that, I'll have to dive back in and re-code it.
+
+This is where the magic happens, baby!
+<br><br>
+
+## Frontend and Backend - The Website Shall Be Split In Twain!
+
+What we really need is to have a computer somewhere whose job is just to keep track of the information I have included in my website. It can store a list of all the items on my shopping list. We call this a **database**.
+
+Then, when a user accesses the website, the super-powerful javascript that I send them will awaken in their browser, and access that database to find out what items are on my shopping list right now. If I decide to add an item to my list, I'll just add it in the database, and anyone who accesses the website after that will see it appear. 
+
+I can even write my javascript so that it will ask users for new items to add to the list, and then send them to the database as new additions. Then everyone will see the updated list!
