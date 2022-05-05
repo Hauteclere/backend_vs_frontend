@@ -29,6 +29,7 @@ If you've spent time in the last thirty years using computers, you are no doubt 
 > An improvement, some would say...
 
 <br>
+
 The key thing to note here is that **a website is just another file**. The program we use to view it in is called a **web browser** (ex: Chrome, Firefox, Edge...). The only difference is that instead of being stored on our computer, websites are stored on *other people's* computers. To access them our computer sends out a request through the internet, and when the website owner's computer gets that request, it responds by sending us the file.
 
 ![A computer requesting a website and a webserver responding](./images/website.png)
