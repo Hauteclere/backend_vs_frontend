@@ -94,4 +94,3 @@ The particularly exciting thing about Javascript is that it is designed to run *
 
 You can take a look at the code that makes this website run [here]().
 
-<iframe src="https://giphy.com/embed/8bYqZB9rtl4mluDPkL" width="480" height="204" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/orchfilms-movie-orchard-films-antiquities-8bYqZB9rtl4mluDPkL">via GIPHY</a></p>
