@@ -38,4 +38,6 @@ The basic file-type that our web browsers display to is is `.html`. These files 
 
 Here's an example of a **very** simple website that I coded as an HTML/CSS file combo: 
 
-You can see the code I wrote for it here: [./tree/html_only]()
+
+
+You can see the code I wrote for it [here](https://github.com/Hauteclere/backend_vs_frontend/tree/html_only).
